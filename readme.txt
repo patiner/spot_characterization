@@ -2,8 +2,7 @@ Code and Data for Identification and Empirical Analysis of
 Amazon EC2 Spot Instance Features for Cost-Effective Tenant Procurement
 
 This repository contains code and data for "Identification and Empirical Analysis of 
-Amazon EC2 Spot Instance Features for Cost-Effective Tenant Procurement" (http://www.cse.psu.edu/
-¡«bhuvan/CSE-TR-16-006.pdf).
+Amazon EC2 Spot Instance Features for Cost-Effective Tenant Procurement" (http://www.cse.psu.edu/~bhuvan/CSE-TR-16-006.pdf).
 
 |--- trace analysis
 MATLab code and data for prediction of the key features for modeling spot prices. "Lb" denotes the lifetime of a spot instance under bid b and "ES" (or "es") denotes the expected average spot price during Lb.
