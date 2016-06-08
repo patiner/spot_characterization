@@ -1,0 +1,50 @@
+0.1
+
+docker run -v /home/cheng/docker:/mnt -p 11211:11211 -p 5001:5001 -i -t ubuntu /bin/bash
+
+0.2
+
+  sudo apt-get update
+ sudo apt-get upgrade
+ sudo apt-get install make
+ sudo apt-get install gcc
+sudo apt-get install libevent-dev
+
+sudo apt-get autoremove automake
+sudo apt-get install automake
+sudo chmod u+x ./configure
+
+#./configure && make && sudo make install
+1. 
+
+on a vm (ubuntu) with container (with docker image memcached) installed, copy Dockerfile to /home/ubuntu
+
+2. in the VM, run
+
+sudo docker build -t memcached_img .
+
+Note: Do not forget the trailing . for docker to find the Dockerfile. This will create a new docker image called memcached_img. When you start a container from this new image, memcached service will be automatically started.
+
+3. create a snapshot for this VM
+
+4. in the VM, 
+
+python memcached_daemon.py
+
+This will first create a docker container which runs memcached and then do itsown job. My daemon uses port 12345 and the public ip of the VM.
+
+
+-------------------
+
+format of stats files:
+
+---------
+output.txt
+
+i (sec), tput_sum, avg_latency, len(active_od), len(active_spot), m_o_t, m_s_t, c_o_t, c_s_t
+
+
+------------
+stat file for a singel VM:
+
+index, core, ram, cpu_util, latency, miss_rate, turnover, hot_weight, cold_weight
