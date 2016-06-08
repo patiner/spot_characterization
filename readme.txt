@@ -1,5 +1,3 @@
-Code and Data for Identification and Empirical Analysis of 
-Amazon EC2 Spot Instance Features for Cost-Effective Tenant Procurement
 
 This repository contains code and data for "Identification and Empirical Analysis of 
 Amazon EC2 Spot Instance Features for Cost-Effective Tenant Procurement" (http://www.cse.psu.edu/~bhuvan/CSE-TR-16-006.pdf).
