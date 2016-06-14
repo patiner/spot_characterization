@@ -13,8 +13,8 @@ from sys import stderr
 from threading import Lock
 
 # input your EC2 access ID and access key here
-EC2_ACCESS_ID  = 'AKIAJY3BG7******6GZQ'
-EC2_ACCESS_KEY = 'R7PVB37iVc4ljbJWn******xxz/DuuAHraR8nYJI'
+EC2_ACCESS_ID  = 'A***Q'
+EC2_ACCESS_KEY = 'R***I'
 
 class VM:
     """
